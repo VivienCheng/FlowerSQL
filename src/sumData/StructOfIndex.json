@@ -1,0 +1,1 @@
+[{"nameOfIndex":"stua","nameOfTable":"Student","type":0,"numOfFields":2,"nameOfFields":["id","name"]},{"nameOfIndex":"stuc","nameOfTable":"Student","type":1,"numOfFields":1,"nameOfFields":["name"]},{"nameOfIndex":"stub","nameOfTable":"Student","type":2,"numOfFields":1,"nameOfFields":["age"]}]

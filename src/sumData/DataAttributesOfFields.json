@@ -1,0 +1,239 @@
+[
+  {
+    "nameOfTable": "Student",
+    "nameOfForeignKey": [
+      "name"
+    ],
+    "nameOfPrimaryKey": "id",
+    "fields": [
+      {
+        "nameOfField": "id",
+        "type": "int",
+        "constraints": [
+          "primarykey"
+        ]
+      },
+      {
+        "nameOfField": "name",
+        "type": "char",
+        "constraints": [
+          "unique"
+        ]
+      },
+      {
+        "nameOfField": "age",
+        "type": "int",
+        "constraints": [
+          "notnull"
+        ]
+      },
+      {
+        "nameOfField": "sex",
+        "type": "bool",
+        "constraints": []
+      }
+    ],
+    "numOfFields": 4,
+    "nameOfFields": [
+      "id",
+      "name",
+      "age",
+      "sex"
+    ]
+  },
+  {
+    "nameOfTable": "User",
+    "nameOfForeignKey": [],
+    "nameOfPrimaryKey": "name",
+    "fields": [
+      {
+        "nameOfField": "name",
+        "type": "char",
+        "constraints": [
+          "primarykey"
+        ]
+      },
+      {
+        "nameOfField": "password",
+        "type": "char",
+        "constraints": []
+      }
+    ],
+    "numOfFields": 2,
+    "nameOfFields": [
+      "name",
+      "password"
+    ]
+  },
+  {
+    "nameOfTable": "Teacher",
+    "nameOfForeignKey": [
+      "Sname",
+      "Sex"
+    ],
+    "nameOfPrimaryKey": "Sno",
+    "fields": [
+      {
+        "nameOfField": "Sno",
+        "type": "char",
+        "constraints": [
+          "primarykey"
+        ]
+      },
+      {
+        "nameOfField": "Sname",
+        "type": "char",
+        "constraints": [
+          "unique",
+          "foreignkey"
+        ]
+      },
+      {
+        "nameOfField": "Sex",
+        "type": "bool",
+        "constraints": [
+          "foreignkey"
+        ]
+      },
+      {
+        "nameOfField": "Sage",
+        "type": "int",
+        "constraints": [
+          "notnull"
+        ]
+      },
+      {
+        "nameOfField": "Sdept",
+        "type": "char",
+        "constraints": []
+      },
+      {
+        "nameOfField": "Cno",
+        "type": "char",
+        "constraints": []
+      }
+    ],
+    "numOfFields": 6,
+    "nameOfFields": [
+      "Sno",
+      "Sname",
+      "Sex",
+      "Sage",
+      "Sdept",
+      "Cno"
+    ]
+  },
+  {
+    "nameOfTable": "Authority",
+    "nameOfForeignKey": [],
+    "nameOfPrimaryKey": "name",
+    "fields": [
+      {
+        "nameOfField": "name",
+        "type": "char",
+        "constraints": []
+      },
+      {
+        "nameOfField": "authority",
+        "type": "char",
+        "constraints": []
+      }
+    ],
+    "numOfFields": 2,
+    "nameOfFields": [
+      "name",
+      "authority"
+    ]
+  },
+  {
+    "nameOfTable": "leeTest",
+    "nameOfForeignKey": [],
+    "nameOfPrimaryKey": "",
+    "fields": [
+      {
+        "nameOfField": "id",
+        "type": "int",
+        "constraints": [
+          "NOT",
+          "NULL"
+        ]
+      },
+      {
+        "nameOfField": "chinese",
+        "type": "int",
+        "constraints": [
+          "NOT",
+          "NULL"
+        ]
+      },
+      {
+        "nameOfField": "math",
+        "type": "int",
+        "constraints": [
+          "NOT",
+          "NULL"
+        ]
+      },
+      {
+        "nameOfField": "english",
+        "type": "int",
+        "constraints": [
+          "NOT",
+          "NULL"
+        ]
+      }
+    ],
+    "numOfFields": 4,
+    "nameOfFields": [
+      "id",
+      "chinese",
+      "math",
+      "english"
+    ]
+  },
+  {
+    "nameOfTable": "Person",
+    "nameOfForeignKey": [],
+    "nameOfPrimaryKey": "id",
+    "fields": [
+      {
+        "nameOfField": "id",
+        "type": "int",
+        "constraints": [
+          "primarykey"
+        ]
+      },
+      {
+        "nameOfField": "",
+        "type": "name",
+        "constraints": [
+          "char",
+          "unique"
+        ]
+      },
+      {
+        "nameOfField": "",
+        "type": "age",
+        "constraints": [
+          "int",
+          "not",
+          null
+        ]
+      },
+      {
+        "nameOfField": "",
+        "type": "sex",
+        "constraints": [
+          "bool"
+        ]
+      }
+    ],
+    "numOfFields": 4,
+    "nameOfFields": [
+      "id",
+      "",
+      "",
+      ""
+    ]
+  }
+]

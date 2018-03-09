@@ -1,0 +1,79 @@
+[
+  {
+    "content": [
+      [
+        "21",
+        "DaMing",
+        "18",
+        "true"
+      ],
+      [
+        "24",
+        "XiaoMing",
+        "09",
+        "true"
+      ],
+      [
+        "73",
+        "DaHong",
+        "18",
+        "false"
+      ]
+    ]
+  },
+  {
+    "content": [
+      [
+        "root",
+        "123456"
+      ],
+      [
+        "flower",
+        "qazwsx"
+      ]
+    ]
+  },
+  {
+    "content": []
+  },
+  {
+    "content": [
+      [
+        "root",
+        " create grant help insert revoke select update "
+      ],
+      [
+        "flower",
+        " create"
+      ]
+    ]
+  },
+  {
+    "content": [
+      [
+        "1",
+        "100",
+        "100",
+        "100"
+      ],
+      [
+        "2",
+        "100",
+        "100",
+        "100"
+      ],
+      [
+        "3",
+        "100",
+        "100",
+        "100"
+      ],
+      [
+        "1",
+        "100",
+        "100",
+        "100"
+      ]
+    ]
+  }
+]
