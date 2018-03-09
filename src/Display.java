@@ -1,9 +1,5 @@
 
 
-
-
-
-
 public class Display {
 
 
