@@ -1,10 +1,10 @@
 # FlowerSQL
 
-一.概述
+### 一.概述
 
 FlowerSQL是一款使用java编写的高性能数据库系统。系统支持部分标准SQL语句，支持创建复杂表，支持复杂表查询，支持创建和查询索引，支持更新、插入和删除表，内有用户表和权限表的设定，支持用户权限的授予和撤销。
 
-二.FlowerSQL系统功能设定
+### 二.FlowerSQL系统功能设定
 
 ● 基于json格式文件的java数据库系统，支持标准的SQL语句。
 
@@ -34,60 +34,60 @@ FlowerSQL是一款使用java编写的高性能数据库系统。系统支持部�
 
 ●	支持按索引读取数据，提高数据库性能。vZXvX
 
-三.系统软件流程
+### 三.系统软件流程
 
 ![Aaron Swartz](https://raw.githubusercontent.com/VivienCheng/FlowerSQL/master/%E5%9B%BE%E7%89%87/%E7%B3%BB%E7%BB%9F%E8%BD%AF%E4%BB%B6%E6%B5%81%E7%A8%8B.jpg)
 
-四.部分系统图解
+### 四.部分系统图解
 
-帮助系统
+**1.帮助系统**
 
 ![Aaron Swartz](https://github.com/VivienCheng/FlowerSQL/blob/master/%E5%9B%BE%E7%89%87/%E5%B8%AE%E5%8A%A9%E7%B3%BB%E7%BB%9F.jpg)
 
-用户登录和系统
+**2.用户登录和系统**
 
 ![Aaron Swartz](https://raw.githubusercontent.com/VivienCheng/FlowerSQL/master/%E5%9B%BE%E7%89%87/%E7%94%A8%E6%88%B7%E5%92%8C%E7%99%BB%E5%BD%95%E7%B3%BB%E7%BB%9F%E7%A4%BA%E6%84%8F%E5%9B%BE.jpg)
 
-FlowerSQL语句处理系统
+**3.FlowerSQL语句处理系统**
 
 ![Aaron Swartz](https://raw.githubusercontent.com/VivienCheng/FlowerSQL/master/%E5%9B%BE%E7%89%87/SQL%E8%AF%AD%E5%8F%A5%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F%20.jpg)
 
-五.FlowerSQL所支持的语句
+### 五.FlowerSQL所支持的语句
 
-[create]
+**1.create**
 
 create table tableName(attribute1 type1,attribute2 type2,……)
 
 create index tableName on table(desc);
 
-[help]
+**2.help**
 
 help database/table/index/view;
 
-[select]
+**3.select**
 
 select (distinct) attribute1,attribute2……/* from tableName where xxxx;
 
 select (distinct) attribute1,attribute2……/* from tableName group by attribute;
 
-[insert]
+**4.insert**
 
 insert into tableName values(value1,value2……); 
 
 insert into tableName(attribute1,attribute2……) values(value1,value2……); 
 
-[grant]
+**5.grant**
 
 grant attribute1,attribute2…… to user1,user2……/public;
 
-[revoke]
+**6.revoke**
 
 revoke attribute1,attribute2…… from user1,user2……/public;
 
-[update]
+**7.update**
 
 update tableName set xxxx (where xxxx);
 
-[delete]
+**8.delete**
 
 delete from tableName (where xxxx);
