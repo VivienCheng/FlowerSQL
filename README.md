@@ -32,7 +32,7 @@ FlowerSQL是一款使用java编写的高性能数据库系统。系统支持部�
 
 ●	支持按条件select语句，支持group by、having和oreder by子句,支持where相关语句。
 
-●	支持按索引读取数据，提高数据库性能。
+●	支持按索引读取数据，提高数据库性能。vZXvX
 
 三.系统软件流程
 
@@ -52,3 +52,42 @@ FlowerSQL语句处理系统
 
 ![Aaron Swartz](https://raw.githubusercontent.com/VivienCheng/FlowerSQL/master/%E5%9B%BE%E7%89%87/SQL%E8%AF%AD%E5%8F%A5%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F%20.jpg)
 
+五.FlowerSQL所支持的语句
+
+[create]
+
+create table tableName(attribute1 type1,attribute2 type2,……)
+
+create index tableName on table(desc);
+
+[help]
+
+help database/table/index/view;
+
+[select]
+
+select (distinct) attribute1,attribute2……/* from tableName where xxxx;
+
+select (distinct) attribute1,attribute2……/* from tableName group by attribute;
+
+[insert]
+
+insert into tableName values(value1,value2……); 
+
+insert into tableName(attribute1,attribute2……) values(value1,value2……); 
+
+[grant]
+
+grant attribute1,attribute2…… to user1,user2……/public;
+
+[revoke]
+
+revoke attribute1,attribute2…… from user1,user2……/public;
+
+[update]
+
+update tableName set xxxx (where xxxx);
+
+[delete]
+
+delete from tableName (where xxxx);
